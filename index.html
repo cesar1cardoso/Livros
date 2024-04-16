@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Livros - Biblioteca pessoal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Adicione um Livro</h1>
+    <form id="bookForm">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="author">Autor:</label>
+        <input type="text" id="author" name="author" required><br>
+        <label for="genre">Gênero:</label>
+        <input type="text" id="genre" name="genre" required><br>
+        <label for="year">Ano:</label>
+        <input type="text" id="year" name="year" required><br>
+        <label for="classification">Classificação:</label>
+        <input type="text" id="classification" name="classification" required><br>
+        <br>
+        <button type="submit">Adicionar Livro</button>
+    </form>
+
+    <h1>Pesquisa de Livros</h1>
+    <input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Pesquisar livros...">
+    
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Gênero</th>
+                <th>Ano</th>
+                <th>Classificação</th>
+            </tr>
+        </thead>
+        <tbody id="bookTableBody">
+            <!-- Aqui serão adicionados os livros através do JavaScript -->
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
